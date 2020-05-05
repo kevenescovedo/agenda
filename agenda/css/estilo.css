@@ -1,0 +1,22 @@
+#home {
+	background: #ffc107;
+	color: white;
+}
+input {
+	margin-top: 20px;
+}
+.caixa {
+	padding:  60px 0;
+	border-bottom:  1px solid #e5e5e5;
+}
+footer p a {
+	margin: 5px 15px;
+	color: #ffc107;
+	text-decoration: none;
+}
+#botao {
+	margin-left: 400px;
+}
+h2 {
+	color: blue;;
+}
