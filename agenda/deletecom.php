@@ -1,42 +1,20 @@
 <?php 
- require_once("conexao.php");
- 
- 
-
 if(isset($_POST['id'])) {
-$id = $_POST["id"];
-  
-    $sql = "select * from contato where id_contato = $id ";
-    $prepare = $conn->prepare($sql);
-    $prepare->execute();
-    $retorno = $prepare-> fetchObject();
+	require_once("conexao.php");
     
-  if($prepare->rowCount() >= 1) {
-    
-  
-   
- 
-  
-  
-   
-  
-  }
-
 	
 	if($_POST ['delete'] == 'yes') {
 		try {
-			$statement =$conn->prepare('DELETE FROM contato WHERE id_contato=:id');
+			$statement =$conn->prepare('DELETE FROM compromisso WHERE id_compromisso=:id');
 			$statement->bindValue(':id', $_POST['id'], PDO::PARAM_INT);
 			$statement->execute();
 
 		} catch(PDOException $exception) {
 			//ações a serem realizadas caso não exluir o registro
-    }
-    
-  }
-  
+		}
+	}
 
-	header ("Location:contato.php");
+	header ("Location:compromisso.php");
 	exit();
 
 }
@@ -57,48 +35,16 @@ $id = $_POST["id"];
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/delete.css">
     <link rel="stylesheet" type="text/css" href="css/contato.js">
-    
+    <title>Finans - finanças pessoais</title>
   </head>
   <main>
-  
 
 
-<form action="delete.php" method="post"  class="container col-xs-12 col-sm-6 col-md-6 col-lg-3">
-<input type="hidden" name="id" value="<?php print $_GET ['id']?>"/>
-<p> Tem certeza que deseja excluir os registros deste contato <?php 
-if(isset($_POST['id'])) {
-$id = $_POST["id"];
-  
-    $sql = "select * from contato where id_contato = $id ";
-    $prepare = $conn->prepare($sql);
-    $prepare->execute();
-    $retorno = $prepare-> fetchObject();
-    
-  if($prepare->rowCount() >= 1) {
-    
-  
-   
-   $nome = $retorno->nome_contato;
-  
-   
-  }
-   print ($nome);
-  
-  
-  }
-  ?> ?  </p>
-	
+<form action="deletecom.php" method="post" class="container col-xs-12 col-sm-6 col-md-6 col-lg-3">
+<p> Tem certeza que deseja excluir os registros deste compromisso ?</p>
+	<input type="hidden" name="id" value="<?php print $_GET ['id']?>"/>
 	<button name="delete" class="btn btn-primary" class="display-4" value="yes">SIM</button>
 	<button name="delete" class="btn btn-primary" class="display-4" value="no">NÃO</button>
     </form>
 
     </main>
-    <?php
-  
-  
-if(isset($_POST['id'])) {
-   
-   
-}
-
-    ?>

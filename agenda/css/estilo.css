@@ -1,14 +1,42 @@
 #home {
-	background: #ffc107;
+	
 	color: white;
+}
+div {
+	width: auto;
+	height: auto;
 }
 input {
 	margin-top: 20px;
 }
-.caixa {
-	padding:  60px 0;
-	border-bottom:  1px solid #e5e5e5;
+h1 {
+	color: white;
 }
+p {
+	color: white;
+}
+/* The element to apply the animation to */
+ nav {
+ 	
+ }
+
+  
+  
+
+
+
+
+body {
+	background-image: url(../imagem/fundo2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: auto;
+	
+     height: auto;
+	 
+  
+}
+
 footer p a {
 	margin: 5px 15px;
 	color: #ffc107;
@@ -19,4 +47,137 @@ footer p a {
 }
 h2 {
 	color: blue;;
+}
+main {
+	
+	height: auto;
+	padding-top: 100px;
+	width: 100%;
+}
+form {
+
+   padding-top: 40px;
+   padding-bottom: 40px;
+   padding-left: 40px;
+   padding-right:  40px;
+	background-color: #1C1B1B;
+	
+
+	
+}
+
+.formulario {
+	width: 40%;
+	padding-top:30px;
+	padding-bottom: 30px;
+	margin: 0 auto;
+	background-color: #1C1B1B;
+	text-align: center;
+
+	
+}
+.formulario img {
+width: 120px;
+height: 120px;
+margin-top:-60px;
+margin-bottom: 30px;
+}
+input#usuario {
+	background-image: url(../imagem/icone-usuario.png);
+	background-repeat: no-repeat;
+	background-position: 10px;
+text-indent: 20px;
+}
+input#email {
+	background-image: url(../imagem/icons8-e-mail-26.png);
+	background-repeat: no-repeat;
+	background-position: 50px;
+	
+
+}
+input#senha {
+	background-image: url(../imagem/icone-cadeado.png);
+	background-repeat: no-repeat;
+	background-position: 10px;
+	text-indent: 20px;
+
+}
+h1 {
+	color: white;
+}
+p {
+	color: white;
+}.formulario2 {
+	width: 60%;
+	padding-top:30px;
+	padding-bottom: 30px;
+	margin: 0 auto;
+
+
+	text-align: center;
+
+}
+.titulo {
+	background-color: black;
+	color: white;
+
+	text-indent: 10px;
+}
+.col1 {
+	width: 10%;
+	float: left;
+	text-align: center;
+	min-height: 2.05em;
+
+}
+.
+#listagemdecompromissos {
+	margin-top: 30px;
+	width: auto;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+#lista {
+
+	
+	 position: absolute;
+	 top: 70%;
+	width:100%;
+    background-color: #C0C0C0;
+	display:block;
+	height: auto;
+}
+#lista2 {
+	 position: absolute;
+	 
+	width:100%;
+    background-color: transparent;
+	display:block;
+	height: auto;
+}
+#imagemcarregando {
+	
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#listacontatos {
+	margin-top: 30px;
+	width: : auto;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+nav {
+	width: auto;
+	height: auto;
+}
+header {
+	height:auto !important;
+}
+div {
+	flex-wrap;
 }
